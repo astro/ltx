@@ -9,6 +9,7 @@ var createElement = require('./lib/createElement')
 var tag = require('./lib/tag')
 var tagString = require('./lib/tagString')
 var is = require('./lib/is')
+var match = require('./lib/match')
 
 exports = module.exports = tag
 
@@ -18,6 +19,8 @@ exports.equal = equal.equal
 exports.nameEqual = equal.name
 exports.attrsEqual = equal.attrs
 exports.childrenEqual = equal.children
+
+exports.match = match
 
 exports.isNode = is.isNode
 exports.isElement = is.isElement
